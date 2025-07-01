@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+.container{
+    position:relative;
+    background-image: url(./img/E2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:1000px;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+
+.logo{
+    position:absolute;
+    width:0%;
+    top:55px;
+    left:8%;
+    font-family:Bona-Nova-SC;
+    color:aliceblue;
+    font-size:200;
+    text-shadow: 4px 4px 8px black;
+     animation: slideleft 1s ease-in;
+
+}
+@keyframes slideleft {
+    from{margin-left:300%}
+    to{margin-left:5%}
+    
+}
+
+.container2{
+
+    display:flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    top: 50%;
+    
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ .your{
+    
+    color:aliceblue;
+    font-family: Bona-Nova-SC;
+    font-size: 70px;
+
+}
+
+.text{
+    background-color: rgb(233, 227, 219);
+    width:230px;
+    height: 69px;
+    border-radius: 3px;
+    margin-left: 15px;
+    text-align: center;
+    overflow: hidden;
+
+}
+.text2{
+    width: 204px;
+    height: 69px;
+    border-radius: 3px;
+    color:rgb(16, 66, 66);
+    font-family: Caveat;
+    font-size: 70px;
+    text-align: center;
+    animation: anim 8s infinite;
+    animation-timing-function:ease-in-out;
+    animation-delay: 2s;
+    padding-top: -5px;
+    transform: translateY(-10px);
+}
+
+@keyframes anim {
+    0%{
+        margin-top: 0px;
+    }
+
+    33%{
+        margin-top: -90px;
+    }
+
+    66%{
+        margin-top: -180px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+    .text{
+    font-size: 70px;
+    color: rgb(172,223,228);
+     }
+
+
+
+#nav{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    margin-top: 0px;
+    background-color: rgb(1, 36, 25);
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+
+    
+}
+#nav {
+    width: 100%;
+    justify-content:flex-end;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+
+    .logo{
+        font-size: 150px;
+
+    }
+
+    #nav {
+        justify-content: centre;
+    }
+    #animation{
+        transform: translateY(-50px);
+    }
+  }
+#nav a{
+    color:aliceblue;
+    display:inline-block;
+    height:auto;
+    width: auto;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgba(1, 36, 24,0.3);
+}
+#animation2{
+    font-size: 40px;
+    animation: slidetop 2s;
+    animation-timing-function: ease;
+    text-align: left;
+    margin-top: 30%;
+    color:aliceblue;
+    font-family: Bona-Nova-SC;
+    width: 100%;
+    margin-left: 5%;
+    border-left: 3px solid white;
+    padding-bottom: auto;
+    padding-top: auto;
+    height:fit-content;
+    text-shadow: 4px 4px 8px rgb(0, 0, 5);
+    
+    
+}
+@keyframes slidetop {
+    from{margin-top:300%}
+    to{margin-top:30%}
+    
+}
+
+
+
+#nav a:hover{
+    background-color: rgb(173, 111, 18);
+
+}
+.button a {
+    display: inline-block;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border:2px solid black;
+    width:100px;
+    height:40px;
+    font-family: Bona-Nova-SC;
+    font-size:20px;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: none;
+    text-shadow: none; 
+    margin-left: 40%;
+    color:black;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+.button a:hover {
+   
+    background-color: rgba(252, 252, 252, 0.725);
+   
+}
+.why{
+    color:black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 70px;
+	text-align: center;
+    width:100%;
+   
+}
+
+.container3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+
+}
+.featurein {
+    background-color: white;
+    color:aliceblue;
+    font-family: Bona-Nova-SC;
+    width: 400px;
+    height: 400px;
+    margin:40px;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    box-shadow: 5px 5px  8px #888888;
+    overflow: visible;
+    
+}
+.featureout {
+
+    color:aliceblue;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition:0.5s ease;
+    font-size: 40px;
+    font-family:Bona-Nova-SC; 
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform:translateY(-58px);
+    text-shadow: 5px 5px 8px black;
+    
+}
+.overflowtext{
+    transform:translateY(-58px);
+    color:black;
+    font-size:50px;
+}
+.featurein:hover .featureout{
+    height:400px
+}
+@media only screen and (max-width: 1000px) {
+
+    .container3{
+        flex-direction:column;
+
+    }
+
+
+  }
+
+  .team{
+    background-color: white;
+    width:100%;
+    height:120%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 5px 5px  8px #888888;
+  }
+
+ .teamshow{
+    width:100%;
+    height:100%;
+    margin:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:100px;
+    text-align:center;
+
+
+ }
+ @media only screen and (max-width: 1000px) {
+
+    .teamshow{
+        flex-direction:column;
+        
+    }
+    .team{
+        height:230%;
+    }
+
+
+  }
+
+ .contact{
+    background-color: black;
+    width:100%;
+    height:50%;
+    margin-top:30px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+  }  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+ 
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }  
+
+  .leader{
+    font-size: 70px;
+    font-family:Bona-Nova-SC; 
+    padding-top: 150px;
+  }
+  .teamtext{
+    font-size:50px;
+    font-family:Bona-Nova-SC ;
+    transform: translateY(-150px);
+    text-align: center;
+    
+  }
+  .phone{
+    color:white;
+    font-size:25px;
+    text-align:center;
+ 
+  }
+  
+  .quali {
+
+    background-color: white;
+    color:black;
+    font-family: Bona-Nova-SC;
+    width: 90%;
+    height: auto;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    box-shadow: 5px 5px  8px #888888;
+    overflow: visible;
+    padding:30px;
+    font-size: 50px;
+    
+   
+    
+}
+
+.workers{
+    color:black;
+    font-size:50px;
+}
+.expence li{
+    background-color: black;
+    color:white;
+    width:fit-content;
+    height:fit-content;
+    padding:15px;
+    margin:20px;
+    border-radius: 10px;
+    font-size: 40px;
+    text-align: left;
+
+}
+.expence h3{
+    color: rgb(250, 168, 62);
+
+}
